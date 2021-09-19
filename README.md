@@ -12,11 +12,11 @@ Created to scrape the Patient Lab Locations of the University of Rochester Medic
 3. Open a terminal window and navigate to your new folder
 4. Type the following commands:
 
-'''
+```
 conda env create create --file urmc_env.yml
 conda activate urmc_env
 jupyter notebook
-'''
+```
 
 5. A web browser will open with teh Jupyter file tree. Click on your .ipynb notebook which will open in a new tab.
 
@@ -24,7 +24,7 @@ jupyter notebook
 
 To add required packages to your own environment:
 
-'''
+```
 conda install -c anaconda selenium              #to navigate to url
 conda install -c conda-forge geckodriver        #to navigate web browser
 conda install -c anaconda beautifulsoup4        #to parse html
@@ -36,7 +36,7 @@ conda install -c anaconda numpy                 #to get unique list values
 conda install -c anaconda glob2                 #to find all CSV files in current directory
 os                                              #to get filepath of CSV file
 pip install openpyxl                            #required to read/write Excel files
-'''
+```
 
 ## Unit Tests and Alerts
 

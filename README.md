@@ -4,23 +4,26 @@ Created to scrape the Patient Lab Locations of the University of Rochester Medic
 
 ## Set Up and Configuration
 
-l. Create and name a new folder
-l. To that folder, save three files:
-    l. "URMC Web Scrape.ipynb
-    l. "2021-09-12 14:25_LabLocations.csv"
-    l. "urmc_env.yml"
-l. Open a terminal window and navigate to your new folder
-l. Type the following commands:
+1. Create and name a new folder
+2. To that folder, save three files:
+    - "URMC Web Scrape.ipynb
+    - "2021-09-12 14:25_LabLocations.csv"
+    - "urmc_env.yml"
+3. Open a terminal window and navigate to your new folder
+4. Type the following commands:
+
 '''
 conda env create create --file urmc_env.yml
 conda activate urmc_env
 jupyter notebook
 '''
-l. A web browser will open with teh Jupyter file tree. Click on your .ipynb notebook which will open in a new tab.
+
+5. A web browser will open with teh Jupyter file tree. Click on your .ipynb notebook which will open in a new tab.
 
 ### Required Python Packages
 
 To add required packages to your own environment:
+
 '''
 conda install -c anaconda selenium              #to navigate to url
 conda install -c conda-forge geckodriver        #to navigate web browser
@@ -33,6 +36,7 @@ conda install -c anaconda numpy                 #to get unique list values
 conda install -c anaconda glob2                 #to find all CSV files in current directory
 os                                              #to get filepath of CSV file
 pip install openpyxl                            #required to read/write Excel files
+'''
 
 ## Unit Tests and Alerts
 
